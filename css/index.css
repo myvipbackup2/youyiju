@@ -474,6 +474,40 @@
     }
 }
 
+/*视频弹层*/
+.video_playwrap {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 2000;
+    background: url(../img/logo.png) center center no-repeat #000
+}
+
+.video_playwrap video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+.video_playwrap .close {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    z-index: 9999;
+    cursor: pointer;
+    border: 0;
+    background: url(../img/icon_close.png) center center no-repeat
+}
+
 /*联系我们*/
 .contact {
     margin: 0 auto 140px;
@@ -647,3 +681,4 @@
     }
 
 }
+
