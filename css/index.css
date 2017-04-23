@@ -2,7 +2,7 @@
 .category {
     width: 1120px;
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 40px 0;
 }
 
 .category .category-title {
@@ -29,15 +29,6 @@
     background-size: cover;
     margin-right: 13px;
 }
-
-/*.category .category-list li:before {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(34, 34, 34, .4) no-repeat;
-}*/
 
 .category .category-list img {
     width: 100%;
@@ -79,7 +70,8 @@
         margin-right: 4%;
         margin-bottom: 0.2rem;
     }
-    .category .category-list li:nth-child(2n){
+
+    .category .category-list li:nth-child(2n) {
         margin-right: 0;
     }
 
@@ -103,12 +95,14 @@
 #hot-house-m {
     display: none;
 }
-.hot-house .separator{
+
+.hot-house .separator {
     width: 50px;
     height: 2px;
     background: #F6A623;
     margin: 10px auto;
 }
+
 .hot-house h1 {
     color: #303030;
     font-size: 48px;
@@ -139,21 +133,21 @@
     margin: 100px auto;
 }
 
-.house{
-   /* -webkit-box-shadow: 0 2px 10px #DFDFDF;
-    -moz-box-shadow:  0 2px 10px #DFDFDF;
-    box-shadow:  0 2px 10px #DFDFDF;*/
+.house {
+    /* -webkit-box-shadow: 0 2px 10px #DFDFDF;
+     -moz-box-shadow:  0 2px 10px #DFDFDF;
+     box-shadow:  0 2px 10px #DFDFDF;*/
 }
 
 .house img {
     width: 100%;
 }
 
-.house .house-wrap{
+.house .house-wrap {
     -webkit-box-shadow: 0 2px 10px #DFDFDF;
-    -moz-box-shadow:  0 2px 10px #DFDFDF;
-    box-shadow:  0 2px 10px #DFDFDF;
-    height: 387px;
+    -moz-box-shadow: 0 2px 10px #DFDFDF;
+    box-shadow: 0 2px 10px #DFDFDF;
+    min-height: 387px;
 }
 
 .house .house-info-wrap {
@@ -162,16 +156,24 @@
 }
 
 .house .house-area {
-    color: #95989A;
+    color: #6c6c6c;
     font-size: 12px;
     margin: 0;
 }
 
 .house .house-title {
-    color: #222222;
+    color: #222;
     font-size: 20px;
+    line-height: 20px;
     padding: 22px 0;
     margin: 0;
+}
+
+.house .house-content {
+    color: #4A4A4A;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: normal;
 }
 
 .house .other-info {
@@ -212,7 +214,7 @@
     text-align: center;
 }
 
-.more a{
+.more a {
     display: inline-block;
     border: 1px solid #F6A623;
     width: 188px;
@@ -221,6 +223,17 @@
     border-radius: 5px;
     color: #F6A623;
     font-size: 15px;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+
+.more a:hover {
+    color: #fff;
+    background-color: #F6A623;
+    text-decoration: none;
 }
 
 /*精选房源响应式样式*/
@@ -229,12 +242,6 @@
         /*display: none;*/
         padding: 1rem 0;
     }
-
-    /*#hot-house-m {
-        display: block;
-        padding: 1rem 0.24rem 0.8rem;
-        margin: 0.24rem;
-    }*/
 
     .hot-house h1 {
         color: #303030;
@@ -250,7 +257,7 @@
         margin: 1rem auto;
     }
 
-    .hot-house .house{
+    .hot-house .house {
         padding-left: 0;
         padding-right: 0;
         margin-bottom: 0.4rem;
@@ -265,12 +272,14 @@
         -o-transform: translateX(-50%);
         transform: translateX(-50%);
     }
-    .swiper-pagination-bullet{
+
+    .swiper-pagination-bullet {
         margin-right: 5px;
-        background: rgba(0,0,0,0.54);
+        background: rgba(0, 0, 0, 0.54);
         opacity: 1;
     }
-    .swiper-pagination-bullet-active{
+
+    .swiper-pagination-bullet-active {
         background: #DFDFDF;
     }
 
@@ -278,7 +287,7 @@
         margin-top: 1rem;
     }
 
-    .more a{
+    .more a {
         width: 2.4rem;
         height: 0.64rem;
         line-height: 0.64rem;
@@ -289,17 +298,19 @@
 
 /*精选房源结束*/
 /*推荐房源开始*/
-.recommend-video{
+.recommend-video {
     position: relative;
 }
-.video-bg{
+
+.video-bg {
     width: 100%;
     position: absolute;
     left: 0;
     top: 0;
     z-index: 1;
 }
-.icon-play{
+
+.icon-play {
     width: 100px;
     height: 100px;
     position: absolute;
@@ -310,27 +321,30 @@
     cursor: pointer;
     z-index: 2;
 }
-#recommend-video{
+
+#recommend-video {
     width: 100%;
     height: 100%;
 }
+
 /*推荐房源响应式样式*/
 @media (max-width: 768px) {
-    .icon-play{
+    .icon-play {
         width: 1rem;
         height: 1rem;
         margin-left: -0.5rem;
         margin-top: -0.5rem;
     }
 }
+
 /*推荐房源结束*/
 
-.old-house{
+.old-house {
     height: 640px;
     position: relative;
 }
 
-.old-house img{
+.old-house img {
     position: absolute;
     left: 0;
     top: 0;
@@ -338,32 +352,37 @@
     height: 100%;
 }
 
-.old-house .old-house-wrap{
+.old-house .old-house-wrap {
     position: absolute;
     top: 200px;
     left: 130px;
 }
-.old-house h1{
+
+.old-house h1 {
     width: 100%;
     font-size: 52px;
+    line-height: 52px;
     color: #fff;
-    margin-bottom: 50px;
+    /*margin-bottom: 50px;*/
 }
-.old-house h3{
+
+.old-house h3 {
     width: 519px;
     font-size: 20px;
+    line-height: 36px;
     font-weight: 100;
     color: #fff;
     margin-bottom: 50px;
-
 }
-.old-house p{
+
+.old-house p {
     font-size: 14px;
     color: #fff;
 }
-.old-house .show-detail{
+
+.old-house .show-detail {
     display: inline-block;
-    font-size: 20px;
+    font-size: 18px;
     width: 138px;
     height: 48px;
     line-height: 48px;
@@ -371,37 +390,43 @@
     color: #fff;
     text-align: center;
     margin-bottom: 50px;
-
 }
 
 @media (max-width: 768px) {
-    .old-house{
+    .old-house {
         height: auto;
+        overflow: hidden;
     }
-    .old-house img{
+
+    .old-house img {
         position: static;
-        width: 100%;
-        height: 100%;
+        /*width: 7.5rem;*/
+        height: 6.40rem;
     }
-    .old-house .old-house-wrap{
+
+    .old-house .old-house-wrap {
         top: 0.86rem;
         left: 0.8rem;
     }
-    .old-house h1{
+
+    .old-house h1 {
         font-size: 0.72rem;
         margin-bottom: 0.3rem;
     }
-    .old-house h3{
+
+    .old-house h3 {
         width: 5.19rem;
         font-size: 0.28rem;
         margin-bottom: 0.3rem;
-
+        line-height: .44rem;
     }
-    .old-house p{
+
+    .old-house p {
         font-size: 0.14rem;
         color: #fff;
     }
-    .old-house .show-detail{
+
+    .old-house .show-detail {
         font-size: 0.2rem;
         width: 1.74rem;
         height: 0.64rem;
@@ -410,14 +435,215 @@
         margin-bottom: 0;
 
     }
+
+    #boutique-house .house-title {
+        color: #4A4A4A;
+        font-size: .36rem;
+    }
+
+    .house .house-area {
+        font-size: .24rem;
+        line-height: .24rem;
+    }
+
+    .house .house-title {
+        color: #4A4A4A;
+        font-size: .36rem;
+        line-height: .36rem;
+    }
+}
+
+/*广告推荐视频占位*/
+#video {
+    text-align: center;
+    margin: 0 auto;
+    width: 1020px;
+    height: 574px;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
-    #boutique-house .house-title{
-        color: #4A4A4A;
-        font-size: 0.36rem;
+    #video {
+        width: 7.5rem;
+        height: auto;
+        /*height: 5.74rem;*/
     }
-    #boutique-house .house{
+
+    #video img {
+        width: 100%;
     }
 }
 
+/*联系我们*/
+.contact {
+    margin: 0 auto 140px;
+}
+
+.contact .contact_con {
+    margin: 0 auto;
+    width: 1020px;
+    height: 385px;
+    background-color: #F2F2F2;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 50px 60px;
+}
+
+.contact .contact_con .con_left {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.contact .contact_con .con_left .con_title {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    line-height: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.contact .contact_con .con_left .con_text {
+    width: 290px;
+    color: #4A4A4A;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 23px;
+}
+
+.contact .contact_con .con_left .line {
+    margin-top: 70px;
+    width: 60px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #000;
+}
+
+.contact .contact_con .con_right {
+    width: 50%;
+    height: 100%;
+    float: right;
+    padding-left: 82px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.contact .contact_con .con_right .con_title {
+    font-size: 14px;
+    line-height: 14px;
+    margin: 8px 0 0 0;
+    font-weight: 500;
+    color: #000;
+}
+
+.contact .contact_con .con_right .con_tel {
+    font-size: 36px;
+    line-height: 36px;
+    color: #000;
+    text-decoration: none;
+    margin: 19px 0 10px;
+    display: block;
+    font-weight: 300;
+}
+
+.contact .contact_con .con_right .con_time {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 5px;
+    color: #4A4A4A;
+}
+
+.contact .contact_con .con_right .con_text_title {
+    font-size: 14px;
+    line-height: 14px;
+    margin: 20px 0 8px;
+    font-weight: 500;
+    color: #000;
+}
+
+.contact .contact_con .con_right .con_text {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    color: #4A4A4A;
+}
+
+@media (max-width: 768px) {
+    .contact {
+        margin: 0;
+    }
+
+    .contact .contact_con {
+        width: 100%;
+        height: auto;
+        min-height: 7.65rem;
+        padding: .5rem .4rem;
+    }
+
+    .contact .contact_con .con_left {
+        width: 100%;
+        height: auto;
+        float: none;
+    }
+
+    .contact .contact_con .con_left .con_title {
+        line-height: .24rem;
+        font-size: .24rem;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .contact .contact_con .con_left .con_text {
+        width: 6.7rem;
+        text-align: center;
+        font-size: .2rem;
+        line-height: .32rem;
+        margin-top: .2rem;
+    }
+
+    .contact .contact_con .con_left .line {
+        width: .6rem;
+        margin: .4rem auto;
+    }
+
+    .contact .contact_con .con_right {
+        width: 100%;
+        height: auto;
+        float: none;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .contact .contact_con .con_right .con_title {
+        font-size: .2rem;
+        line-height: .2rem;
+        margin: 0;
+    }
+
+    .contact .contact_con .con_right .con_tel {
+        font-size: .48rem;
+        line-height: .48rem;
+        margin: .2rem 0 .1rem;
+    }
+
+    .contact .contact_con .con_right .con_time {
+        font-size: .2rem;
+        line-height: .28rem;
+        margin-bottom: .05rem;
+    }
+
+    .contact .contact_con .con_right .con_text_title {
+        font-size: .2rem;
+        line-height: .2rem;
+        margin: .4rem 0 .2rem;
+    }
+
+    .contact .contact_con .con_right .con_text {
+        font-size: .2rem;
+        line-height: .32rem;
+    }
+
+}

@@ -1,20 +1,23 @@
-html, body{
+html, body {
     height: 100%;
 }
-body{
-    font-family: "PingFang SC","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Microsoft Yahei",微软雅黑,STHeiti,华文细黑,sans-serif;
+
+body {
+    font-family: "PingFang SC", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Microsoft Yahei", 微软雅黑, STHeiti, 华文细黑, sans-serif;
 }
-ul{
+
+ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
+
 /*导航开始*/
-.navbar{
+.navbar {
     background-color: #fff;
 }
 
-.navbar-wrap{
+.navbar-wrap {
     width: 1220px;
     height: 98px;
     line-height: 98px;
@@ -22,68 +25,73 @@ ul{
     /*overflow: hidden;*/
 }
 
-.navbar-header, .country, .navbar-collapse{
+.navbar-header, .country, .navbar-collapse {
     padding-top: 29px;
 }
 
-.navbar-brand{
+.navbar-brand {
     padding: 0;
 }
 
-.logo{
+.logo {
     width: 133px;
     height: 40px;
 }
 
-.nav >li > a{
+.nav > li > a {
     color: #4A4A4A;
     font-size: 18px;
 }
-.nav > li > a:hover{
+
+.nav > li > a:hover {
     color: #F6A623;
     background: none;
 }
-.nav > li > a.active{
+
+.nav > li > a.active {
     color: #F6A623;
 }
+
 .navbar-toggle .icon-bar {
-    background-color: rgba(0,0,0,.54);
+    background-color: rgba(0, 0, 0, .54);
 }
-.nav .advice .border{
+
+.nav .advice .border {
     width: 1px;
     height: 30px;
-    background: rgba(0,0,0, 0.2);
+    background: rgba(0, 0, 0, 0.2);
     float: left;
     margin-top: 10px;
 }
-.nav .advice img{
+
+.nav .advice img {
     width: 24px;
     height: 22px;
     margin-right: 12px;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
 
-    .logo{
+    .logo {
         width: 1.33rem;
         height: 0.4rem;
     }
 
-    .nav .advice{
+    .nav .advice {
         display: none;
     }
 
-    .navbar-wrap{
+    .navbar-wrap {
         width: auto;
         height: auto;
     }
 
-    .navbar-header{
+    .navbar-header {
         padding-top: 0;
         position: relative;
     }
 
-    .navbar-brand{
+    .navbar-brand {
         height: auto;
         position: absolute;
         left: 50%;
@@ -95,48 +103,53 @@ ul{
         transform: translateX(-50%) translateY(-50%);
     }
 
-    .country{
+    .country {
         padding: 0;
         margin: 0;
         position: absolute;
         top: 5px;
         right: 15px;
-       /* -webkit-transform: translateY(-50%);
-        -moz-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        -o-transform: translateY(-50%);
-        transform: translateY(-50%);*/
+        /* -webkit-transform: translateY(-50%);
+         -moz-transform: translateY(-50%);
+         -ms-transform: translateY(-50%);
+         -o-transform: translateY(-50%);
+         transform: translateY(-50%);*/
     }
 
-    .country a, .navbar-collapse a{
+    .country a, .navbar-collapse a {
         font-size: 0.24rem !important;
     }
-    
-    .navbar-toggle{
+
+    .navbar-toggle {
         float: left;
     }
 }
+
 /*导航结束*/
 /*轮播图开始*/
-.carousel{
+.carousel {
     padding-top: 98px;
     height: 675px;
     overflow: hidden;
 }
-.carousel-caption{
+
+.carousel-caption {
     top: 260px;
     text-align: left;
     padding-top: 0;
 }
-.carousel-caption h1{
+
+.carousel-caption h1 {
     font-size: 72px;
     font-weight: bold;
 }
-.carousel-caption h2{
+
+.carousel-caption h2 {
     font-size: 48px;
     font-weight: 100;
 }
-.carousel-caption .show-detail{
+
+.carousel-caption .show-detail {
     display: inline-block;
     font-size: 20px;
     color: #fff;
@@ -147,36 +160,43 @@ ul{
     background: #F6A623;
 }
 
-.banner{
-    background: url("../img/banner1.jpg") no-repeat 50% 50%;
+.banner {
+    background: url("../img/banner1_mobile.png") no-repeat;
     width: 100%;
     height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
     display: none;
     /*-webkit-background-size: 100%;
     background-size: 100%;*/
     position: relative;
     padding-top: 50px;
 }
-.banner .banner-caption{
+
+.banner .banner-caption {
     position: absolute;
     top: 8.62rem;
     margin-left: 0.8rem;
     text-align: left;
 }
-.banner h1{
+
+.banner h1 {
     width: 100%;
     font-size: 0.72rem;
     color: #fff;
 }
-.banner h2{
+
+.banner h2 {
     font-size: 0.48rem;
     font-weight: 100;
     color: #fff;
 }
-.banner p{
+
+.banner p {
     color: #fff;
 }
-.banner .show-detail{
+
+.banner .show-detail {
     display: inline-block;
     font-size: 0.2rem;
     width: 1.74rem;
@@ -186,7 +206,8 @@ ul{
     color: #fff;
     text-align: center;
 }
-.banner .concat-us{
+
+.banner .concat-us {
     width: 4rem;
     height: 0.8rem;
     line-height: 0.8rem;
@@ -204,17 +225,19 @@ ul{
     border-radius: 2px;
 }
 
-@media (max-width: 768px){
-    .carousel{
+@media (max-width: 768px) {
+    .carousel {
         display: none;
     }
-    .banner{
+
+    .banner {
         display: block;
     }
 }
+
 /*轮播图结束*/
 
-.footer{
+.footer {
     width: 1220px;
     height: 74px;
     margin: 0 auto;
@@ -222,7 +245,8 @@ ul{
     position: relative;
     background: #fff;
 }
-.footer .logo{
+
+.footer .logo {
     float: left;
     position: absolute;
     top: 50%;
@@ -232,16 +256,27 @@ ul{
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
 }
-.footer .logo img{
+
+.footer .logo img {
     width: 74px;
     height: 22px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
-.footer .copyright{
+
+.footer .copyright {
     text-align: center;
-    color: rgba(0,0,0,0.3);
+    color: rgba(0, 0, 0, 0.3);
     font-size: 14px;
+    line-height: 45px;
 }
-.footer .share{
+
+.footer .share {
     float: right;
     position: absolute;
     right: 0;
@@ -252,54 +287,66 @@ ul{
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
 }
-.footer .share li{
+
+.footer .share li {
     float: left;
     margin-left: 44px;
 }
+
 .footer .weixin, .footer .weibo {
     display: inline-block;
     width: 24px;
     height: 20px;
-    
+
 }
-.footer .share img{
+
+.footer .share img {
     width: 100%;
 }
-.footer .concat{
+
+.footer .concat {
     display: none;
 }
-@media (max-width: 768px){
-    .footer{
+
+@media (max-width: 768px) {
+    .footer {
         width: auto;
         height: auto;
-        margin-top: 1rem;
+        /*margin-top: 1rem;*/
         border: 0;
     }
-    .footer .logo{
+
+    .footer .logo {
         display: none;
     }
-    .footer .share{
+
+    .footer .share {
         display: none;
     }
-    .footer .concat{
+
+    .footer .concat {
         display: block;
     }
-    .footer .concat a{
+
+    .footer .concat a {
         color: #fff;
         height: 1.11rem;
         line-height: 1.11rem;
         display: inline-block;
     }
-    .footer .concat img{
+
+    .footer .concat img {
         width: 0.28rem;
         height: 0.28rem;
     }
-    .footer .call{
+
+    .footer .call {
         background: #8CA0B3;
         text-align: center;
 
     }
-    .footer .advice{
+
+    .footer .advice {
         background: #F6A623;
         text-align: center;
 
