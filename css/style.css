@@ -13,20 +13,24 @@ ul {
 }
 
 /*导航开始*/
+#nav {
+    margin-bottom: 0;
+}
+
 .navbar {
     background-color: #fff;
 }
 
 .navbar-wrap {
     width: 1220px;
-    height: 98px;
-    line-height: 98px;
+    height: 83px;
+    line-height: 83px;
     margin: 0 auto;
     /*overflow: hidden;*/
 }
 
 .navbar-header, .country, .navbar-collapse {
-    padding-top: 29px;
+    padding-top: 17px;
 }
 
 .navbar-brand {
@@ -128,8 +132,8 @@ ul {
 /*导航结束*/
 /*轮播图开始*/
 .carousel {
-    padding-top: 98px;
-    height: 675px;
+    padding-top: 83px;
+    height: 630px;
     overflow: hidden;
 }
 
