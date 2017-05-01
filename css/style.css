@@ -13,8 +13,15 @@ ul {
 }
 
 /*导航开始*/
+#bs-example-navbar-collapse-1 li a {
+    padding: 15px 25px;
+}
+
 #nav {
     margin-bottom: 0;
+    -webkit-box-shadow: -12px -11px 6px 13px #a1a1a1;
+    -moz-box-shadow: -12px -11px 6px 13px #a1a1a1;
+    box-shadow: -12px -11px 6px 13px #a1a1a1;
 }
 
 .navbar {
@@ -26,11 +33,11 @@ ul {
     height: 83px;
     line-height: 83px;
     margin: 0 auto;
-    /*overflow: hidden;*/
 }
 
 .navbar-header, .country, .navbar-collapse {
     padding-top: 17px;
+    margin-left: 15px;
 }
 
 .navbar-brand {
@@ -81,6 +88,10 @@ ul {
         height: 0.4rem;
     }
 
+    .container {
+        padding: 0;
+    }
+
     .nav .advice {
         display: none;
     }
@@ -93,6 +104,7 @@ ul {
     .navbar-header {
         padding-top: 0;
         position: relative;
+        margin: 0;
     }
 
     .navbar-brand {
@@ -133,7 +145,7 @@ ul {
 /*轮播图开始*/
 .carousel {
     padding-top: 83px;
-    height: 630px;
+    height: 763px;
     overflow: hidden;
 }
 
@@ -145,12 +157,15 @@ ul {
 
 .carousel-caption h1 {
     font-size: 72px;
+    line-height: 72px;
     font-weight: bold;
+    margin-bottom: 30px;
 }
 
 .carousel-caption h2 {
     font-size: 48px;
     font-weight: 100;
+    margin-bottom: 40px;
 }
 
 .carousel-caption .show-detail {
@@ -162,6 +177,7 @@ ul {
     line-height: 48px;
     text-align: center;
     background: #F6A623;
+    margin-bottom: 40px;
 }
 
 .banner {
@@ -242,15 +258,19 @@ ul {
 /*轮播图结束*/
 
 .footer {
-    width: 1220px;
     height: 74px;
-    margin: 0 auto;
-    border-top: 1px solid #979797;
-    position: relative;
-    background: #fff;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    background: #F2F2F2;
+    width: 100%;
 }
 
-.footer .logo {
+.footer .wrapper {
+    width: 1220px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.footer .wrapper .logo {
     float: left;
     position: absolute;
     top: 50%;
@@ -261,7 +281,7 @@ ul {
     transform: translateY(-50%);
 }
 
-.footer .logo img {
+.footer .wrapper .logo img {
     width: 74px;
     height: 22px;
     position: absolute;
@@ -273,14 +293,15 @@ ul {
     transform: translateY(-50%);
 }
 
-.footer .copyright {
+.footer .wrapper .copyright {
     text-align: center;
     color: rgba(0, 0, 0, 0.3);
     font-size: 14px;
     line-height: 45px;
+    margin: 13px auto;
 }
 
-.footer .share {
+.footer .wrapper .share {
     float: right;
     position: absolute;
     right: 0;
@@ -292,68 +313,86 @@ ul {
     transform: translateY(-50%);
 }
 
-.footer .share li {
+.footer .wrapper .share li {
     float: left;
     margin-left: 44px;
 }
 
-.footer .weixin, .footer .weibo {
+.footer .wrapper .weixin, .footer .weibo {
     display: inline-block;
     width: 24px;
     height: 20px;
 
 }
 
-.footer .share img {
+.footer .wrapper .share img {
     width: 100%;
 }
 
-.footer .concat {
+.footer .wrapper .concat {
     display: none;
 }
 
 @media (max-width: 768px) {
     .footer {
+        margin-bottom: .98rem;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .footer .wrapper {
         width: auto;
         height: auto;
         /*margin-top: 1rem;*/
         border: 0;
     }
 
-    .footer .logo {
+    .footer .wrapper .logo {
         display: none;
     }
 
-    .footer .share {
+    .footer .wrapper .share {
         display: none;
     }
 
-    .footer .concat {
+    .footer .wrapper .concat {
         display: block;
+        overflow: hidden;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 99;
     }
 
-    .footer .concat a {
+    .footer .wrapper .concat a {
         color: #fff;
         height: 1.11rem;
         line-height: 1.11rem;
         display: inline-block;
+        text-decoration: none;
     }
 
-    .footer .concat img {
+    .footer .wrapper .concat img {
         width: 0.28rem;
         height: 0.28rem;
     }
 
-    .footer .call {
+    .footer .wrapper .call {
         background: #8CA0B3;
         text-align: center;
 
     }
 
-    .footer .advice {
+    .footer .wrapper .advice {
         background: #F6A623;
         text-align: center;
+    }
 
+    .footer .wrapper .copyright {
+        color: rgba(0, 0, 0, 0.2);
+        font-size: .2rem;
+        line-height: 1.2rem;
+        margin: 0 auto;
     }
 
 }
